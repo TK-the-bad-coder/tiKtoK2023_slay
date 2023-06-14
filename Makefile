@@ -2,7 +2,8 @@ pre:
 	go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 	go install github.com/cloudwego/kitex/tool/cmd/kitex@latest
 	go install github.com/cloudwego/thriftgo@latest
-
+	go install github.com/cloudwego/hertz/pkg/app
+	go install github.com/cloudwego/hertz/pkg/app/server
 generate:
 	mkdir -p ./http-server/proto_gen
 	protoc -I=. --go_out=./http-server/proto_gen ./idl_http.proto

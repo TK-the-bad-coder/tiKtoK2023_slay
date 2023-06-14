@@ -2,6 +2,7 @@ module github.com/TikTokTechImmersion/assignment_demo_2023/rpc-server
 
 go 1.18
 
+
 require (
 	github.com/apache/thrift v0.13.0
 	github.com/cloudwego/kitex v0.5.2
